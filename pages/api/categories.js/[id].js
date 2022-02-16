@@ -53,7 +53,7 @@ const deleteCategory = async (req, res) => {
     
     await Categories.findByIdAndDelete(id)
     
-    res.json(img: "Succes! Deletedn a category)
+    res.json({msg: "Success! Deleted a category"})
   } catch (err) {
       return res.status(500).json({err: err.message})
     }
