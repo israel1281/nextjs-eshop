@@ -13,7 +13,7 @@ const Modal = () => {
   const deleteUser = (item) => {
     dispatch(deleteItem(item.data, item.id, item.type))
     
-    deleteData(`user/${item.id`, auth.token)
+    deleteData(`user/${item.id}`, auth.token)
     .then(res => {
       if(res.err) return dispatch({type: 'NOTIFY', payload: {error: res.err}})
       return dispatch({type: 'NOTIFY', payload: {success: res.msg}})
