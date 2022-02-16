@@ -12,7 +12,7 @@ export default function Home() {
                     <Script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></Script>
                     <Script src="https://kit.fontawesome.com/a076d05399.js"></Script>
                     <Script src={`https://www.paypal.com/sdk/js?client-id=${process.env.PAYPAL_CLIENT_ID}`}></Script>
-                </Head>
+                
       </Head>
       
     </div>
