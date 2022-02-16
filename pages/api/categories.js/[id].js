@@ -51,7 +51,7 @@ const deleteCategory = async (req, res) => {
       err: "PLease delete all products with a relationship"
     })
     
-    awiat Categories.findByIdAndDelete(id)
+    await Categories.findByIdAndDelete(id)
     
     res.json(img: "Succes! Deletedn a category)
   } catch (err) {
