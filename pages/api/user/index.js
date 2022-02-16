@@ -15,7 +15,7 @@ export default async (req, res) => {
   }
 }
 
-const getUsers = async (res, res) => {
+const getUsers = async (req, res) => {
   try {
     const result = await auth(req, res)
     if(result.role !== 'admin')
